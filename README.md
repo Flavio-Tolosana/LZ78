@@ -39,14 +39,16 @@ Para comprobar su corrección se recomienda ejecutarlo de la siguiente manera.
 Comprime todos los archivos de una carpeta *(véase [run.sh](run.sh))*. Además descomprime dichos archivos y verifica utilizando `diff` que sean iguales.
 Genera también un fichero llamado `numeroFrases.txt`, con la siguiente estructura:
 
-> \# size numFrases
-> 1000 173
-> 10000 1176
-> 100000 8784
-> 1000000 69586
-> 10000000 574210
-> 100000000 4877722
-> 1000000000 42339065
+``` txt
+\# size numFrases
+1000 173
+10000 1176
+100000 8784
+1000000 69586
+10000000 574210
+100000000 4877722
+1000000000 42339065
+```
 
 **Requisitos uso:** Los archivos de la carpeta deben tener el alfabeto: $a \in {0, 1}$ y además deben tener extensión .txt.
 Por ejemplo estos ficheros se recomiendan (cada uno con el tamaño que se indica):
