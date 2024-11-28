@@ -40,7 +40,7 @@ Comprime todos los archivos de una carpeta *(véase [run.sh](run.sh))*. Además 
 Genera también un fichero llamado `numeroFrases.txt`, con la siguiente estructura:
 
 ``` txt
-\# size numFrases
+# size numFrases
 1000 173
 10000 1176
 100000 8784
