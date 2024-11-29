@@ -10,7 +10,7 @@ make
 **Requisitos uso:** \<ficheroEntrada\> solo pude contener los dos siguientes caracteres: 0, 1.
 Es así que el el alfabeto es:
 
-$$a \in {0,1}$$
+$$a \in \{0,1\}$$
 
 Uso:
 ``` sh
@@ -36,7 +36,7 @@ Para comprobar su corrección se recomienda ejecutarlo de la siguiente manera.
 ```
 
 ## [run.sh](run.sh)
-Comprime todos los archivos de una carpeta *(véase [run.sh](run.sh))*. Además descomprime dichos archivos y verifica utilizando `diff` que sean iguales.
+Comprime todos los archivos de una carpeta *(véase [run.sh](run.sh))* utilizando LZ78, GZIP y BZIP2. Además descomprime dichos archivos y verifica utilizando `diff` que sean iguales (solamente en el caso de LZ78).
 Genera también un fichero llamado `numeroFrases.txt`, con la siguiente estructura:
 
 ``` txt
@@ -50,7 +50,7 @@ Genera también un fichero llamado `numeroFrases.txt`, con la siguiente estructu
 1000000000 42339065
 ```
 
-**Requisitos uso:** Los archivos de la carpeta deben tener el alfabeto: $a \in {0, 1}$ y además deben tener extensión .txt.
+**Requisitos uso:** Los archivos de la carpeta deben tener el alfabeto: $a \in \{0, 1\}$ y además deben tener extensión .txt.
 Por ejemplo estos ficheros se recomiendan (cada uno con el tamaño que se indica):
 
 > - 1_file_1KB.txt
@@ -60,6 +60,12 @@ Por ejemplo estos ficheros se recomiendan (cada uno con el tamaño que se indica
 > - 5_file_10MB.txt
 > - 6_file_100MB.txt
 > - 7_file_1GB.txt
+
+Uso:
+``` sh
+./run.sh   # No borra los ficheros descomprimidos generados
+./run.sh   # Borra los ficheros descomprimidos generados
+```
 
 ## [plot.sh](plot.sh)
 Genera los dos siguientes plots *(véase [plot.sh](plot.sh))*:
